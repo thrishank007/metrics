@@ -136,7 +136,7 @@ jobs:
     needs: [ docker-master ]
     steps:
       - name: Run tests
-        uses: lowlighter/metrics@master
+        uses: mikey-/metrics@main
         with:
           token: MOCKED_TOKEN
           plugins_errors_fatal: yes
@@ -228,7 +228,7 @@ jobs:
     needs: [ update-latest ]
     steps:
       - name: Run tests
-        uses: lowlighter/metrics@latest
+        uses: mikey-/metrics@latest
         with:
           token: MOCKED_TOKEN
           plugins_errors_fatal: yes
