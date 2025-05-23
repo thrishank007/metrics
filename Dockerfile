@@ -14,7 +14,7 @@ RUN set -x \
 
 # Environment variables
 ENV PUPPETEER_SKIP_DOWNLOAD="true"
-ENV PUPPETEER_EXECUTABLE_PATH="google-chrome-stable"
+ENV PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome-stable"
 
 # Copy repository
 WORKDIR /metrics
@@ -22,6 +22,7 @@ COPY . .
 
 # Install node modules and rebuild indexes
 RUN set -x \
+  && which "${PUPPETEER_EXECUTABLE_PATH}" \
   && npm ci \
   && npm run build \
   && npm prune --omit=dev
