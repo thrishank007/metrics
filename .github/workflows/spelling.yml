@@ -59,6 +59,7 @@ jobs:
             "cspell": "https://raw.githubusercontent.com/check-spelling/cspell-dicts/v20241114/dictionaries/"
           }
         extra_dictionaries:
+          cspell/cpp/cpp.txt
           cspell:html/html.txt
           cspell:filetypes/filetypes.txt
           cspell:css/css.txt
@@ -67,8 +68,17 @@ jobs:
           cspell:npm/npm.txt
           cspell:aws/aws.txt
           cspell:software-terms/software-terms.txt
+          cspell:cryptocurrencies/cryptocurrencies.txt
+          cspell:cryptocurrencies/crypto-terms.txt
+          cspell:en_AU/src/aoo-mozilla-en-dict/en_AU.dic
+          cspell:en_CA/src/aoo-mozilla-en-dict/en_CA.dic
+          cspell:en_GB/src/aoo-mozilla-en-dict/en-GB.dic
+          cspell:en_US/src/aoo-mozilla-en-dict/en_US.dic
+          cspell:en_shared/shared-additional-words.txt
+          cpell:en_US/src/aoo-mozilla-en-dict/wordlist_kevin_en_US_20201207_123679w.txt
+          cspell:en_US/acronyms.txt
         check_extra_dictionaries: true
-        extra_dictionary_limit: 20
+        extra_dictionary_limit: 50
 
   comment:
     name: Report
