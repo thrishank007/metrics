@@ -68,15 +68,6 @@ jobs:
           cspell:npm/npm.txt
           cspell:aws/aws.txt
           cspell:software-terms/software-terms.txt
-          cspell:cryptocurrencies/cryptocurrencies.txt
-          cspell:cryptocurrencies/crypto-terms.txt
-          cspell:en_AU/src/aoo-mozilla-en-dict/en_AU.dic
-          cspell:en_CA/src/aoo-mozilla-en-dict/en_CA.dic
-          cspell:en_GB/src/aoo-mozilla-en-dict/en-GB.dic
-          cspell:en_US/src/aoo-mozilla-en-dict/en_US.dic
-          cspell:en_shared/shared-additional-words.txt
-          cpell:en_US/src/aoo-mozilla-en-dict/wordlist_kevin_en_US_20201207_123679w.txt
-          cspell:en_US/acronyms.txt
         check_extra_dictionaries: true
         extra_dictionary_limit: 50
 
