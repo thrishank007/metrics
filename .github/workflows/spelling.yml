@@ -59,7 +59,7 @@ jobs:
             "cspell": "https://raw.githubusercontent.com/check-spelling/cspell-dicts/v20241114/dictionaries/"
           }
         extra_dictionaries:
-          cspell/cpp/cpp.txt
+          cspell:cpp/cpp.txt
           cspell:html/html.txt
           cspell:filetypes/filetypes.txt
           cspell:css/css.txt
