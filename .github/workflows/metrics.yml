@@ -1,0 +1,17 @@
+name: Metrics
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mikey-/metrics@latest
+        with:
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: thrishank007
+          base: header, repositories
+          plugin_lines: yes
